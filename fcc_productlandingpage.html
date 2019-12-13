@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html>
     <script src="https://kit.fontawesome.com/3e85e364b6.js" crossorigin="anonymous"></script>
-    <style src="fcc_plp_style.css"></style>
     
     <div id="page-wrapper">
         <header id="header">
+            <link rel="stylesheet" type="text/css" href="fcc_plp_style.css">
+
             <div class="logo">
-                <i class="fas fa-car"></i>
-                <h3>AGWraps</h3>
+                <h3><i class="fas fa-coffee"></i> Killer Coffee</h3>
             </div>
 
-
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#bestonearth">The Best on Earth</a></li>
+                    <li><a class="nav-link" href="#purchase">Purchase</a></li>
+                </ul>
+            </nav>
         </header>
+
+        <div class="container"></div>
+
+        <section id="hero">
+            <h2>The only coffee you'll ever need.</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input 
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email for exclusive offers"
+                    required
+                />
+                <input id="submit" type="submit" value="Submit" class="btn" />
+            </form>
+        </section>
+
+        <div class="container">
+            <section id="about">
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-handshake"></i></div>
+                    <div class="desc">
+                        <h2>Fair Trade</h2>
+                        <p>Our coffee is produced to fair trade standards by fair trade organizations, which create trading partnerships that are based on dialogue, transparency and respect.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-grin-beam"></i></div>
+                    <div class="desc">
+                        <h2>Great Taste</h2>
+                        <p>We guarantee you'll love the full-bodied, robust flavor of our coffee or your money back.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </div>
 
 </html>
