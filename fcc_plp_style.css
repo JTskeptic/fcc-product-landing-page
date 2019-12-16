@@ -29,11 +29,13 @@ header {
     position: fixed;
     top: 0;
     min-height: 75px;
-    padding: 0px 20px;
+    width: 100%;
+    padding: 0px 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(0, 0, 0));
   }
   
   @media (max-width: 600px) {
@@ -42,11 +44,23 @@ header {
     }
   }
 
+  .logo {
+    display: flex;
+    align-content: center;
+    flex-grow: 2;
+    padding: 0 20px;
+  }
+
   nav {
     font-weight: 400;
   }
   
   @media (max-width: 650px) {
+    .logo {
+      align-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
     nav {
       margin-top: 10px;
       width: 100%;
@@ -127,8 +141,17 @@ header {
     cursor: pointer;
   }
 
+  .aboutsection {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
   #about {
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
+    align-content: center;
   }
 
   #about .icon {
@@ -164,4 +187,20 @@ header {
     }
   }
 
+  .container {
+    width: 80%;
+    align-content: center;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 550px) {
+    .grid {
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+  }
   
